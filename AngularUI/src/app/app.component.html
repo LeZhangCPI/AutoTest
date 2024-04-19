@@ -1,0 +1,94 @@
+<app-navbar></app-navbar>
+<p-toast position="top-center"></p-toast>
+<div class="container" style="padding-top: 60px;">
+  <form [formGroup]="entityForm" (ngSubmit)="onSubmit()">
+    <div class="header">
+      <span class="page-name">{{ pageName }}</span>
+      <button type="submit" class="button" mat-raised-button>
+        <mat-icon role="img" class="mat-icon notranslate material-icons mat-icon-no-color" aria-hidden="true">check</mat-icon>
+        <span>Submit</span>
+      </button>
+      <hr>
+    </div>
+      <div class="entity-status-section">
+        <mat-form-field appearance="fill" floatLabel="always" class="wide-select">
+          <mat-label>Patent</mat-label>
+          <mat-select formControlName="entityStatus">
+            <mat-option value="Manage">Manage</mat-option>
+            <mat-option value="Reports">Reports</mat-option>
+            <mat-option value="Documents">Documents</mat-option>
+            <mat-option value="Auxiliary">Auxiliary</mat-option>
+            <mat-option value="Utility">Utility</mat-option>
+            <mat-option value="PatentOfficeReports">Patent Office Reports</mat-option>
+            <mat-option value="GermanRemuneration">German Remuneration</mat-option>
+            <mat-option value="CostEstimator">Cost Estimator</mat-option>
+            <mat-option value="FrenchInventorAwards">French Inventor Awards</mat-option>
+          </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="entity-status-section">
+        <mat-form-field appearance="fill" floatLabel="always" class="wide-select">
+          <mat-label>Foreign Filing</mat-label>
+          <mat-select formControlName="entityStatus">
+          </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="entity-status-section">
+        <mat-form-field appearance="fill" floatLabel="always" class="wide-select">
+          <mat-label>Patent Clearance</mat-label>
+          <mat-select formControlName="entityStatus">
+          </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="entity-status-section">
+        <mat-form-field appearance="fill" floatLabel="always" class="wide-select">
+          <mat-label>Annuity Management</mat-label>
+          <mat-select formControlName="entityStatus">
+          </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="entity-status-section">
+        <mat-form-field appearance="fill" floatLabel="always" class="wide-select">
+          <mat-label>Invention Disclosure</mat-label>
+          <mat-select formControlName="entityStatus">
+          </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="entity-status-section">
+        <mat-form-field appearance="fill" floatLabel="always" class="wide-select">
+          <mat-label>Traddemark</mat-label>
+          <mat-select formControlName="entityStatus">
+          </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="entity-status-section">
+        <mat-form-field appearance="fill" floatLabel="always" class="wide-select">
+          <mat-label>Renewal Management</mat-label>
+          <mat-select formControlName="entityStatus">
+          </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="entity-status-section">
+        <mat-form-field appearance="fill" floatLabel="always" class="wide-select">
+          <mat-label>Trademark Request</mat-label>
+          <mat-select formControlName="entityStatus">
+          </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="entity-status-section">
+        <mat-form-field appearance="fill" floatLabel="always" class="wide-select">
+          <mat-label>General Matter</mat-label>
+          <mat-select formControlName="entityStatus">
+          </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="entity-status-section">
+        <mat-form-field appearance="fill" floatLabel="always" class="wide-select">
+          <mat-label>Administration</mat-label>
+          <mat-select formControlName="entityStatus">
+          </mat-select>
+        </mat-form-field>
+    </div>
+  </form>
+</div>
+

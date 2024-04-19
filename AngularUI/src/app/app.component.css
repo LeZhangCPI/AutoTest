@@ -1,0 +1,35 @@
+.header {
+  padding-top: 10px;
+  width: 100%;
+  float: right !important;
+}
+.hr {
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: var(--bs-border-width) solid;
+  opacity: .25;
+}
+.page-name{
+  font-size: x-large;
+  width: 100%;
+  margin: 1rem;
+}
+.button {
+  margin: 0;
+  display: flex;
+  float: right !important;
+}
+
+
+.example-month-picker .mat-calendar-period-button {
+  pointer-events: none;
+}
+
+.example-month-picker .mat-calendar-arrow {
+  display: none;
+}
+
+.wide-select {
+  width: 250px; /* or could be detailed width, like 300px */
+}

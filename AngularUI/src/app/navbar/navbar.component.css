@@ -1,0 +1,37 @@
+/* navbar basic pattern */
+.navbar-expand-md {
+  background-color: #000; /* set background as black */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4); /* set shadow to navigation bar */
+}
+
+/* navbar logo and title */
+.navbar-light .navbar-brand {
+  color: #fff; /* set white */
+}
+
+.navbar-title {
+  font-size: 20px;
+  color: #f8f9fa; /* set navbar title color */
+  letter-spacing: 0.5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 15px;
+}
+
+/* Adjust navbar menu button style */
+.navbar-light .navbar-toggler {
+  border-color: rgba(255,255,255,0.1);
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* container pattern */
+.container {
+  max-width: 1140px;
+}
