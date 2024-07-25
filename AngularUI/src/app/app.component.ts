@@ -33,7 +33,16 @@ pageName = '';
           next: (response) => this.showSuccess("DueDateListWithExcel.py script executed successfully"),
           error: (error) => this.showError("Submission failed")
         });
-      } else {
+      } else if(entityStatus === 'Country'){
+      this.showSuccess("Automation Test is Running...");
+        this.cd.detectChanges();
+
+        this.http.post('http://127.0.0.1:5000/AutoTest', {entityStatus}).subscribe({
+          next: (response) => this.showSuccess("DueDateListWithExcel.py script executed successfully"),
+          error: (error) => this.showError("Submission failed")
+        });
+      }
+      else {
         this.showError("Selected option does not trigger any action.");
       }
     } else {

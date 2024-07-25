@@ -15,24 +15,26 @@ driver = webdriver.Chrome()
 driver.maximize_window()
 driver.get("https://r10v2test.cpisystems.com/")
 
+#agree
 WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button.btn.modal-close.btn-primary"))).click()
 
-
+#login page
 driver.find_element(By.CSS_SELECTOR, "input[id='Email']").send_keys("lzhang@computerpackages.com")
 time.sleep(1)
 driver.find_element(By.CSS_SELECTOR, "input[id='Password']").send_keys("Password1")
 time.sleep(1)
+#click login button
 xpath = "//button[@type='submit' and not(contains(@class, 'btn-Microsoft')) and contains(@class, 'btn-primary')]"
 WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, xpath))).click()
 
+#click patent
 WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "a#menu-Patent"))).click()
-
+#click duedate
 WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "a.nav-link[href*='/Patent/Report/DueDate']"))).click()
 time.sleep(5)
-#Due Date List
-# WebDriverWait(driver, 10).until(EC.presence_of_all_elements_located((By.CLASS_NAME, "disable-ams-only")))
 
 #click checkbox
+#left most checkbox
 checkboxes_includes1 = driver.find_elements(By.CLASS_NAME, "disable-ams-only")
 for checkbox in checkboxes_includes1:
     if not checkbox.is_selected():
